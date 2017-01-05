@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta name = "keywords" content = "Massimo Vignelli, Work, NYC, Subway Map, ">
+        <meta name = "description" content = "Massimo Vignelli’s creation of the NYC Subway Map, among others.">
+        <meta name = "author" content = "Jack Ding">
+        <title>Massimo Vignelli: Work</title>
+        <style>
+        
+             html, body
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin:0px;
+                padding:0px;
+                max-width:100%;
+                background-color: #FEF1CD;
+            }
+            
+            ul 
+            {
+                position:fixed;
+                z-index:12;
+                left:20px;
+                text-align: left;
+                display: inline;
+                margin: 0;
+                padding: 15px 4px 17px 0;
+                list-style: none;
+            }
+            ul li 
+            {
+                position:fixed;
+                z-index:12;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight:700;
+                font-size:28px;
+                text-decoration: overline;
+              display: inline-block;
+              margin-right: -4px;
+              position: relative;
+              padding: 15px 20px;
+              background: black;
+                color:white;
+              cursor: pointer;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+                height:78px;
+                width:78px;
+                padding-top:50px;
+
+            }
+            ul li:hover {               
+              background: green;
+              color: white;
+                height:78px;
+                width:78px;
+            }
+            ul li ul {
+              padding: 0;
+              position: absolute;
+              top: 142px;
+              left: 0;
+              width: 150px;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transition: opacity 0.2s;
+              -moz-transition: opacity 0.2s;
+              -ms-transition: opacity 0.2s;
+              -o-transition: opacity 0.2s;
+              -transition: opacity 0.2s;
+            }
+            ul li ul a { 
+              background: black; 
+              display: block; 
+              color: white;
+              text-shadow: 0 -1px 0 #000;
+                text-decoration:none;
+                padding-left: 10px;
+                font-size:15px;
+                height:30px;
+                padding-top:5px;
+            }
+            ul li ul a:hover { background: green;
+                text-decoration: overline;
+            }
+            ul li:hover ul 
+            {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                background:white;
+                color:black;
+            }
+            
+            #sideBox
+            {
+                max-width: 100%;
+                width:20vw;
+                height:100vh;
+ background-color: #FEF1CD;                position:fixed;
+            }
+            #sideTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:green;
+                font-weight:700;
+                font-size: 4vw;
+                position:fixed;
+                top:200px;
+                width: 20vw;
+                padding-left: 20px;
+                text-decoration: overline;
+            }
+            a.sideNav
+            {
+                text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 2.2vw;
+                position:fixed;
+                margin-left: 20px;
+                padding:10px;
+            }
+            a.sideNav:hover
+            {
+                color:white;
+                background-color: black;
+            }
+            a:link.backToTop
+            {
+                width:78px;
+                height:78px;
+                float:right;
+                position:fixed;
+                z-index:4;
+                top:83vh;
+                right:3vw;
+            }
+            
+            #mainBoxBio
+            {
+                width:inherit;
+                height:1300px;
+                padding-top:20px;
+                
+            }
+            #mainBoxStyleText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:grey;
+                font-weight:700;
+                font-size: 20px;
+                width:60vw;
+                padding-top: 20px;
+                                margin-left: 20px;
+
+            }
+            img.NYC
+            {
+                width: 77vw;
+            }
+             img.Work
+            {
+                width: inherit;
+            }
+            
+            #mainBoxLogosTitle
+            {
+                                margin-left: 20px;
+
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:green;
+                font-weight:700;
+                font-size: 40px;
+                text-decoration: overline;
+            }
+            .workBox
+            {
+                                margin-left: 20px;
+
+                background-color:black;
+                height:auto;
+                width:300px;
+                float: left;
+               
+            }
+            .workBoxContain
+            {
+                                margin-left: 20px;
+
+                height:300px;
+                width:300px;
+                float: left;
+                 margin:10px;
+            }
+            .workBoxTitle
+            {
+                                margin-left: 20px;
+
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:white;
+                font-weight:700;
+                font-size: 30px;
+                text-decoration: overline;
+                text-align: center;
+                margin-top: 20px;
+                                margin-bottom: 20px;
+
+            }
+            #mainBox
+            {
+                max-width: 100%;
+                float:right;
+                width:79vw;
+                height:auto;
+                background-color:#FEF1CD;;
+            }
+            
+            
+        </style>
+    </head>
+
+    <body>
+    
+        <ul>
+  <li>
+    Menu
+    <ul>
+        <a href = "index.html">Home</a>
+        <a href = "glaser.html">Milton Glaser</a>
+        <a href = "rand.html">Paul Rand</a>
+        <a href = "bass.html">Saul Bass</a>
+        <a href = "vignelli.html">Massimo Vignelli</a>
+        <a href = "lubalin.html">Herb Lubalin</a>
+        <a href = "casey.html">Jacqueline Casey</a>
+        <a href = "contact.html">Contact/Sources</a>
+    </ul>
+  </li>
+
+</ul>
+        
+        <div id = "sideBox">
+            <div id = "sideTitle">Massimo Vignelli.
+            <br>NYC.<br>1972.
+            </div>
+            
+            <br>
+            <a class = "sideNav" href = "vignelli.html" style = "top:80vh;">> About</a>
+             <a class = "sideNav" href = "vignelliWork.html" style = "top:88vh;">> Works</a>
+        </div>
+        
+        <a class = "backToTop" href = "#mainBox">
+                 <img class = "backToTop" alt = "Back To Top Button" src = "MiscPhotos/backToTop.png">
+                 </a>
+        
+                <div id = "mainBox">
+
+                    <div id = "mainBoxBio">
+                <div id = "mainBoxStyleText">
+                    <img class = "NYC" alt = "Subway Map" src = "vignelliPhotos/vignelliSubway.png"><br><br>
+                In 1972, Vignelli's NYC Subway Map became a landmark of Modernist information design. Vignelli himself prides it as one of his greatest creations.
+                    <br><br>
+                    In previous versions of the Subway Map, signage was constantly out of date, and civilians found it difficult to navigate. These issues became shockingly clear during the 1964 World's Fair, which brought in over 52 million visitors.
+                    <br><br>
+                    Vignelli's work, staying true to his entire design philosophy, followed a Modernist approach. This style emphasized a minimal aesthetic, combined with bold and narrow typefaces. Above all, Modernism stressed the use of basic geometry, and simple colouring. These principles led to an extremely well-designed Map. 
+                    
+                </div>
+                <br><br><br><br>
+                
+                <div id = "mainBoxLogosTitle">Other Works</div><br>
+
+<div class = "workBoxContain">
+                      <div class = "workBox">
+                    <img class ="Work" alt = "Bloomingdale's Logo" src = "vignelliPhotos/vignelliBlooms.jpg">
+                    <div class = "workBoxTitle">Bloomingdale's</div>
+                </div>  
+                        </div>
+                
+                <div class = "workBoxContain">
+                        <div class = "workBox"> 
+                    <img class ="Work" alt = "American Airlines Logo" src = "vignelliPhotos/vignelliAA.jpg">
+                    <div class = "workBoxTitle">American Airlines</div>
+                </div>
+                        </div>
+                
+                <div class = "workBoxContain">
+                    
+                    <div class = "workBox">
+                    <img class ="Work" alt = "Ducati Logo" src = "vignelliPhotos/vignelliDucati.png">
+                    <div class = "workBoxTitle">Ducati</div>
+                </div>
+                        </div>
+                
+            
+               
+               
+                        <br><br>
+        </div>
+                    <br><br><br><br>
+        </div>
+    </body>
+    
+</html>

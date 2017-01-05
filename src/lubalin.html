@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta name = "keywords" content = "Herb Lubalin, NYC, About, Font, Type, Avant Garde">
+        <meta name = "description" content = "Herb Lubalin’s background and work experience.">
+        <meta name = "author" content = "Jack Ding">
+         <title>Herb Lubalin: About</title>
+        <style>
+        
+             html, body
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin:0px;
+                padding:0px;
+                max-width:100%;
+            }
+            
+            ul 
+            {
+                position:fixed;
+                z-index:12;
+                left:20px;
+                text-align: left;
+                display: inline;
+                margin: 0;
+                padding: 15px 4px 17px 0;
+                list-style: none;
+            }
+            ul li 
+            {
+                position:fixed;
+                z-index:12;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight:700;
+                font-size:28px;
+                text-decoration: overline;
+              display: inline-block;
+              margin-right: -4px;
+              position: relative;
+              padding: 15px 20px;
+              background: black;
+                color:white;
+              cursor: pointer;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+                height:78px;
+                width:78px;
+                padding-top:50px;
+
+            }
+            ul li:hover {
+              background: black;
+              color: white;
+                height:78px;
+                width:78px;
+            }
+            ul li ul {
+              padding: 0;
+              position: absolute;
+              top: 142px;
+              left: 0;
+              width: 150px;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transition: opacity 0.2s;
+              -moz-transition: opacity 0.2s;
+              -ms-transition: opacity 0.2s;
+              -o-transition: opacity 0.2s;
+              -transition: opacity 0.2s;
+            }
+            ul li ul a { 
+              background: black; 
+              display: block; 
+              color: white;
+              text-shadow: 0 -1px 0 #000;
+                text-decoration:none;
+                padding-left: 10px;
+                font-size:15px;
+                height:30px;
+                padding-top:5px;
+            }
+            ul li ul a:hover { background: black;
+                text-decoration: overline;
+            }
+            ul li:hover ul 
+            {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                background:white;
+                color:black;
+            }
+            
+            a:link.backToTop
+            {
+                width:78px;
+                height:78px;
+                float:right;
+                position:fixed;
+                z-index:4;
+                top:83vh;
+                right:3vw;
+            }
+            
+            #sideBox
+            {
+                max-width: 100%;
+                width:20vw;
+                height:100vh;
+                position:fixed;
+            }
+            #sideTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 4vw;
+                position:fixed;
+                top:200px;
+                width: 20vw;
+                padding-left: 20px;
+                text-decoration: overline;
+            }
+            #mainBox
+            {
+                max-width: 100%;
+                float:right;
+                width:78vw;
+                height:auto;
+            }
+            #mainBoxSplash
+            {
+                max-width: 100%;
+                height:100vh;
+                width:79vw;
+            }
+            #mainBoxSplashTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                float:right;
+                width:230px;
+                margin-left:20px;
+                margin-top: 160px;
+                color:white;
+                background-color:black;
+                padding-left: 20px;
+            }
+            #homeDivider
+            {
+                max-width:100%;
+                height:1vh;
+                background-color:black;
+                width: 100vw;
+            }
+            #mainBoxQuoteBox
+            {
+                width:inherit;
+                background-color: black;
+            }
+            #mainBoxQuoteText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                width:40vw;
+                text-align: center;
+                padding:70px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mainBoxBio
+            {
+                width:inherit;
+                height:auto;
+                padding-top:20px;
+
+            }
+            #mainBoxBioTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                text-decoration: overline;
+                                margin-left: 10px;
+
+            }
+            #mainBoxBioText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:grey;
+                font-weight:700;
+                font-size: 20px;
+                width:60vw;
+                padding-top: 20px;
+                                margin-left: 10px;
+
+            }
+            .mainBoxBioTextHighlight
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 20px;
+                width: 150px;
+                float:left;
+            }
+            a.sideNav
+            {
+                text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 2.2vw;
+                position:fixed;
+                margin-left: 20px;
+                padding:10px;
+            }
+            a.sideNav:hover
+            {
+                color:white;
+                background-color: black;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <ul>
+  <li>
+    Menu
+    <ul>
+         <a href = "index.html">Home</a>
+        <a href = "glaser.html">Milton Glaser</a>
+        <a href = "rand.html">Paul Rand</a>
+        <a href = "bass.html">Saul Bass</a>
+        <a href = "vignelli.html">Massimo Vignelli</a>
+        <a href = "lubalin.html">Herb Lubalin</a>
+        <a href = "casey.html">Jacqueline Casey</a>
+        <a href = "contact.html">Contact/Sources</a>
+    </ul>
+  </li>
+
+</ul>
+        
+        <a class = "backToTop" href = "#mainBoxSplash">
+                 <img class = "backToTop" alt = "Back To Top Button" src = "MiscPhotos/backToTop.png">
+                 </a>
+        
+        
+        
+        <div id = "sideBox">
+            <div id = "sideTitle">Herb Lubalin.
+            <br>NYC.<br>1962.
+            </div>
+            
+            <br>
+            <a class = "sideNav" href = "lubalin.html" style = "top:80vh;">> About</a>
+             <a class = "sideNav" href = "lubalinWork.html" style = "top:88vh;">> Works</a>
+        </div>
+        
+        <div id = "mainBox">
+            <div id = "mainBoxSplash">
+                <div id = "mainBoxQuoteText">
+                    "You can do a good ad without good typography, but you can't do a great ad without great typography."
+                </div>
+                
+            </div>
+            
+            <div id = "mainBoxBio">
+                <div id = "mainBoxBioTitle">About Herb Lubalin</div>
+                <div id = "mainBoxBioText">
+                <div class = "mainBoxBioTextHighlight">> Name:</div>Herb Lubalin<br>
+                    <div class = "mainBoxBioTextHighlight">> Born:</div>1918, NYC<br>
+                    <div class = "mainBoxBioTextHighlight">> Studio:</div>Sudler & Hennessey, Herb Lubalin Inc.<br>
+                    <div class = "mainBoxBioTextHighlight">> Known for:</div>"ITC Avant Garde"<br>
+                    
+                    <br><br>
+                    
+                    Herb Lubalin's words perfectly describe his viewpoint on graphic design and art. As a designer, he felt that many were ignoring the importance of typeface, caring more about imaging or colours. 
+                    <br><br>
+                    After getting fired a display firm, Lubalin landed a job at Sudler and Hennessey, which allowed him to practice his skills in designing and creating type. Eventually, he decided to start his own firm in order to allow himself greater creative freedom. He specialized in type.
+                    <br><br>
+                    His private studio offered him the ability to pursue projects he cared about. It was during this time that Lubalin published Avant Garde, a magazine published by Ralph Ginzburg.
+                    <br><br>
+                    Lubalin's views on type are still prevalent in the design community. The rise of minimalism has prompted designers and creators to find beauty and organization in simpler elements such as font, colour and shapes over images.
+                    
+                </div>
+                
+            <br><br><br><br>
+
+                
+            </div>
+            
+        </div>
+    
+    </body>
+    
+</html>

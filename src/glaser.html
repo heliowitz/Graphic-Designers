@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta name = "keywords" content = "Milton Glaser, About, New York, NYC.">
+        <meta name = "description" content = "Milton Glaser’s background and work experience. ">
+        <meta name = "author" content = "Jack Ding">
+        <title>Milton Glaser: About</title>
+        <style>
+        
+             html, body
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin:0px;
+                padding:0px;
+                max-width:100%;
+            }
+            
+            ul 
+            {
+                position:fixed;
+                z-index:12;
+                left:20px;
+                text-align: left;
+                display: inline;
+                margin: 0;
+                padding: 15px 4px 17px 0;
+                list-style: none;
+            }
+            ul li 
+            {
+                position:fixed;
+                z-index:12;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight:700;
+                font-size:28px;
+                text-decoration: overline;
+              display: inline-block;
+              margin-right: -4px;
+              position: relative;
+              padding: 15px 20px;
+              background: black;
+                color:white;
+              cursor: pointer;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+                height:78px;
+                width:78px;
+                padding-top:50px;
+
+            }
+            ul li:hover {
+              background: red;
+              color: white;
+                height:78px;
+                width:78px;
+            }
+            ul li ul {
+              padding: 0;
+              position: absolute;
+              top: 142px;
+              left: 0;
+              width: 150px;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transition: opacity 0.2s;
+              -moz-transition: opacity 0.2s;
+              -ms-transition: opacity 0.2s;
+              -o-transition: opacity 0.2s;
+              -transition: opacity 0.2s;
+            }
+            ul li ul a { 
+              background: black; 
+              display: block; 
+              color: white;
+              text-shadow: 0 -1px 0 #000;
+                text-decoration:none;
+                padding-left: 10px;
+                font-size:15px;
+                height:30px;
+                padding-top:5px;
+            }
+            ul li ul a:hover { background: red;
+                text-decoration: overline;
+            }
+            ul li:hover ul 
+            {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                background:white;
+                color:black;
+            }
+            
+            a:link.backToTop
+            {
+                width:78px;
+                height:78px;
+                float:right;
+                position:fixed;
+                z-index:4;
+                top:83vh;
+                right:3vw;
+            }
+            
+            #sideBox
+            {
+                max-width: 100%;
+                width:20vw;
+                height:100vh;
+                position:fixed;
+            }
+            #sideTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:red;
+                font-weight:700;
+                font-size: 4vw;
+                position:fixed;
+                top:200px;
+                width: 20vw;
+                padding-left: 20px;
+                text-decoration: overline;
+            }
+            #mainBox
+            {
+                max-width: 100%;
+                float:right;
+                width:79vw;
+                height:auto;
+            }
+            #mainBoxSplash
+            {
+                max-width: 100%;
+                height:100vh;
+                width:80;
+                background-image: url(glaserPhotos/heart2.png);
+            }
+            #mainBoxSplashTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                float:right;
+                width:230px;
+                margin-left:20px;
+                margin-top: 160px;
+                color:white;
+                background-color:black;
+                padding-left: 20px;
+            }
+            #mainBoxPhoto
+            {
+                background-image: url(glaserPhotos/glaser.jpg);
+                background-size: cover;
+                height: 70vh;
+                width:inherit;
+            }
+            #mainBoxPhoto2
+            {
+                background-image: url(glaserPhotos/glaserStudio.jpg);
+                background-size: cover;
+                height: 50vh;
+                width:inherit;
+            }
+            #homeDivider
+            {
+                max-width:100%;
+                height:1vh;
+                background-color:black;
+                width: 100vw;
+            }
+            #mainBoxQuoteBox
+            {
+                width:inherit;
+                background-color: black;
+            }
+            #mainBoxQuoteText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:red;
+                font-weight:700;
+                font-size: 40px;
+                width:40vw;
+                text-align: center;
+                padding:70px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mainBoxBio
+            {
+                width:inherit;
+                height:auto;
+                padding-top:20px;
+            }
+            #mainBoxBioTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                text-decoration: overline;
+            }
+            #mainBoxBioText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:grey;
+                font-weight:700;
+                font-size: 20px;
+                width:60vw;
+                padding-top: 20px;
+            }
+            .mainBoxBioTextHighlight
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:red;
+                font-weight:700;
+                font-size: 20px;
+                width: 150px;
+                float:left;
+            }
+            a.sideNav
+            {
+                text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 30px;
+                position:fixed;
+                margin-left: 20px;
+                padding:10px;
+                font-size: 2.2vw;
+            }
+            a.sideNav:hover
+            {
+                color:white;
+                background-color: black;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <ul>
+  <li>
+    Menu
+    <ul>
+        <a href = "index.html">Home</a>
+        <a href = "glaser.html">Milton Glaser</a>
+        <a href = "rand.html">Paul Rand</a>
+        <a href = "bass.html">Saul Bass</a>
+        <a href = "vignelli.html">Massimo Vignelli</a>
+        <a href = "lubalin.html">Herb Lubalin</a>
+        <a href = "casey.html">Jacqueline Casey</a>
+        <a href = "contact.html">Contact/Sources</a>
+    </ul>
+  </li>
+
+</ul>
+        
+        <a class = "backToTop" href = "#mainBoxSplash">
+                 <img class = "backToTop" alt = "Back To Top Button" src = "MiscPhotos/backToTop.png">
+                 </a>
+        
+        
+        
+        <div id = "sideBox">
+            <div id = "sideTitle">Milton Glaser.
+            <br>NYC.<br>1954.
+            </div>
+            
+            <br>
+            <a class = "sideNav" href = "glaser.html" style = "top:80vh;">> About</a>
+             <a class = "sideNav" href = "glaserNYC.html" style = "top:88vh;">> Works</a>
+        </div>
+        
+        <div id = "mainBox">
+            <div id = "mainBoxSplash">
+            
+                <div id = "mainBoxSplashTitle">Love from New York.</div> 
+                
+            </div>
+            
+            <div id = "homeDivider"></div>
+            
+            <div id = "mainBoxPhoto"></div>
+            
+            <div id = "mainBoxQuoteBox">
+                <div id = "mainBoxQuoteText">
+                    "I do virtually nothing except my work. no hobbies."
+                </div>
+            </div>
+            <div id = "mainBoxPhoto2">
+            </div>
+            <div id = "mainBoxBio">
+                <div id = "mainBoxBioTitle">About Milton Glaser</div>
+                <div id = "mainBoxBioText">
+                <div class = "mainBoxBioTextHighlight">> Name:</div> Milton Glaser<br>
+                    <div class = "mainBoxBioTextHighlight">> Born:</div>1929, NYC<br>
+                    <div class = "mainBoxBioTextHighlight">> Studio:</div>PushPin Studios, WBMG, Milton Glaser Studios<br>
+                    <div class = "mainBoxBioTextHighlight">> Known for:</div> "I Love NY", "Bob Dylan", "DC Comics", "Brooklyn Brewery"<br>
+                    
+                    <br><br>
+                    
+                    Milton Glaser is one of the most respected graphic designers in the United States. 
+                    Shortly after graduating from Cooper Union, Glaser co-founded PushPin Studios. 
+                    <br><br>
+                    Glaser eventually left PushPin to found New York Magazine with Clay Felkner. There, he was president and design director until 1977.
+                    <br><br>
+                    By the early 1980s, Glaser's artistic influence had global reach. Teaming up with Walter Bernard in 1983, Glaser helped to form WBMG, a publication design firm which went on to design over 50 magazines, newspapers and periodicals around the world. 
+                    
+                    <br><br>
+                    Glaser also went on to found his own personal studio, where he designed logos, posters, signage and brochures for companies including FedEx, American Airlines, DC Comics, and more.
+                    
+                </div>
+                
+            <br><br><br><br>
+
+                
+            </div>
+            
+        </div>
+    
+    </body>
+    
+</html>

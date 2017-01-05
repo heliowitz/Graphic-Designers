@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta name = "keywords" content = "Massimo Vignelli, NYC, Subway Map, About">
+        <meta name = "description" content = "Massimo Vignelli’s background and work experience. ">
+        <meta name = "author" content = "Jack Ding">
+        <title>Massimo Vignelli: About</title>
+        <style>
+        
+             html, body
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin:0px;
+                padding:0px;
+                max-width:100%;
+                background-color: #FEF1CD;
+            }
+            
+            ul 
+            {
+                position:fixed;
+                z-index:12;
+                left:20px;
+                text-align: left;
+                display: inline;
+                margin: 0;
+                padding: 15px 4px 17px 0;
+                list-style: none;
+            }
+            ul li 
+            {
+                position:fixed;
+                z-index:12;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight:700;
+                font-size:28px;
+                text-decoration: overline;
+              display: inline-block;
+              margin-right: -4px;
+              position: relative;
+              padding: 15px 20px;
+              background: black;
+                color:white;
+              cursor: pointer;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+                height:78px;
+                width:78px;
+                padding-top:50px;
+
+            }
+            ul li:hover {
+              background: green;
+              color: white;
+                height:78px;
+                width:78px;
+            }
+            ul li ul {
+              padding: 0;
+              position: absolute;
+              top: 142px;
+              left: 0;
+              width: 150px;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transition: opacity 0.2s;
+              -moz-transition: opacity 0.2s;
+              -ms-transition: opacity 0.2s;
+              -o-transition: opacity 0.2s;
+              -transition: opacity 0.2s;
+            }
+            ul li ul a { 
+              background: black; 
+              display: block; 
+              color: white;
+              text-shadow: 0 -1px 0 #000;
+                text-decoration:none;
+                padding-left: 10px;
+                font-size:15px;
+                height:30px;
+                padding-top:5px;
+            }
+            ul li ul a:hover { background: green;
+                text-decoration: overline;
+            }
+            ul li:hover ul 
+            {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                background:white;
+                color:black;
+            }
+            
+            a:link.backToTop
+            {
+                width:78px;
+                height:78px;
+                float:right;
+                position:fixed;
+                z-index:4;
+                top:83vh;
+                right:3vw;
+            }
+            
+            #sideBox
+            {
+                max-width: 100%;
+                width:20vw;
+                height:100vh;
+                position:fixed;
+                                background-color: #FEF1CD;
+
+            }
+            #sideTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:green;
+                font-weight:700;
+                font-size: 4vw;
+                position:fixed;
+                top:200px;
+                width: 20vw;
+                padding-left: 20px;
+                text-decoration: overline;
+            }
+            #mainBox
+            {
+                max-width: 100%;
+                float:right;
+                width:79vw;
+                height:auto;
+                background-color: #FEF1CD;
+            }
+            #mainBoxSplash
+            {
+                max-width: 100%;
+                height:100vh;
+                width:80;
+                background-image: url(vignelliPhotos/subway3.png);
+                background-size: cover;
+            }
+            #mainBoxSplashTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                float:right;
+                width:230px;
+                margin-left:20px;
+                margin-top: 160px;
+                color:white;
+                background-color:black;
+                padding-left: 20px;
+            }
+            #mainBoxPhoto
+            {
+                background-image: url(vignelliPhotos/vignelliPhoto.jpg);
+                background-size: cover;
+                height: 70vh;
+                width:inherit;
+            }
+            #mainBoxPhoto2
+            {
+                background-image: url(vignelliPhotos/vignelliPhoto2.jpg);
+                background-size: cover;
+                height: 80vh;
+                width:inherit;
+            }
+            #homeDivider
+            {
+                max-width:100%;
+                height:1vh;
+                background-color:black;
+                width: 100vw;
+            }
+            #mainBoxQuoteBox
+            {
+                width:inherit;
+                background-color: black;
+            }
+            #mainBoxQuoteText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:green;
+                font-weight:700;
+                font-size: 40px;
+                width:40vw;
+                text-align: center;
+                padding:70px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mainBoxBio
+            {
+                width:inherit;
+                height:auto;
+                padding-top:20px;
+            }
+            #mainBoxBioTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                text-decoration: overline;
+                margin-left: 10px;
+            }
+            #mainBoxBioText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:grey;
+                font-weight:700;
+                font-size: 20px;
+                width:60vw;
+                padding-top: 20px;
+                margin-left: 10px;
+            }
+            .mainBoxBioTextHighlight
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:green;
+                font-weight:700;
+                font-size: 20px;
+                width: 150px;
+                float:left;
+            }
+            a.sideNav
+            {
+                text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 2.2vw;
+                position:fixed;
+                margin-left: 20px;
+                padding:10px;
+            }
+            a.sideNav:hover
+            {
+                color:white;
+                background-color: black;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <ul>
+  <li>
+    Menu
+    <ul>
+        <a href = "index.html">Home</a>
+        <a href = "glaser.html">Milton Glaser</a>
+        <a href = "rand.html">Paul Rand</a>
+        <a href = "bass.html">Saul Bass</a>
+        <a href = "vignelli.html">Massimo Vignelli</a>
+        <a href = "lubalin.html">Herb Lubalin</a>
+        <a href = "casey.html">Jacqueline Casey</a>
+        <a href = "contact.html">Contact/Sources</a>
+   </ul>
+  </li>
+
+</ul>
+        
+        <a class = "backToTop" href = "#mainBoxSplash">
+                 <img class = "backToTop" alt = "Back To Top Button" src = "MiscPhotos/backToTop.png">
+                 </a>
+        
+        
+        
+        <div id = "sideBox">
+            <div id = "sideTitle">Massimo Vignelli.
+            <br>NYC.<br>1972.
+            </div>
+            
+            <br>
+            <a class = "sideNav" href = "vignelli.html" style = "top:80vh;">> About</a>
+             <a class = "sideNav" href = "vignelliWork.html" style = "top:88vh;">> Works</a>
+        </div>
+        
+        <div id = "mainBox">
+            <div id = "mainBoxSplash">
+            
+                <div id = "mainBoxSplashTitle">Queens to Manhattan.</div> 
+                
+            </div>
+            
+            <div id = "homeDivider"></div>
+            
+            <div id = "mainBoxPhoto"></div>
+            
+            <div id = "mainBoxQuoteBox">
+                <div id = "mainBoxQuoteText">
+                    "If you can design one thing, you can design everything."
+                </div>
+            </div>
+            <div id = "mainBoxPhoto2">
+            </div>
+            <div id = "mainBoxBio">
+                <div id = "mainBoxBioTitle">About Massimo Vignelli</div>
+                <div id = "mainBoxBioText">
+                <div class = "mainBoxBioTextHighlight">> Name:</div> Massimo Vignelli<br>
+                    <div class = "mainBoxBioTextHighlight">> Born:</div>1931, Milan<br>
+                    <div class = "mainBoxBioTextHighlight">> Studio:</div>Unimark International, Vignelli Associates<br>
+                    <div class = "mainBoxBioTextHighlight">> Known for:</div>"New York Subway Map", "American Airlines", "Bloomingdales"<br>
+                    
+                    <br><br>
+                    
+                    Massimo Vignelli has one of the broadest of portfolios of any famous designer. Starting out in Milan, he quickly moved to New York to help found Unimark International. It quickly became one of the largest design firms in the world. 
+                    <br><br>
+                    Vignelli created some of his most notable work during his time at Unimark, including the American Airlines logo, as well as the New York City Subway Map.
+                    <br><br>
+                    Eventually, Vignelli decided to leave Unimark. He noticed that as their clientele increased, marketing forces pressured the design team to dilute their creative autonomy. Vignelli, strong-headed about his Modernist artistic ideal, decided to start Vignelli Associates.
+                    <br><br>
+                    His new company quickly picked up clients such as IBM, Knoll, Bloomingdale's and American Airlines. Eventually, Vignelli's designs saturated New York. Michael Beirut, a former employee, wrote that: "I rode in a subway with Vignelli-designed signage, shared the sidewalk with Vignelli-designed shopping bags, and walked by a church with Vignelli-designed pipe organs."
+                    
+                </div>
+                
+            <br><br><br><br>
+
+                
+            </div>
+            
+        </div>
+    
+    </body>
+    
+</html>

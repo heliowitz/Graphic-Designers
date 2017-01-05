@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta name = "keywords" content = "Home Page, Graphic Designers, Importance of Graphic Design, Menu Page, Home">
+        <meta name = "description" content = "Directory for featured graphic designers. Includes content regarding importance of graphic design.">
+        <meta name = "author" content = "Jack Ding">
+        <title>Graphic Designers: Home</title>
+        <style>
+        
+            html, body
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin:0px;
+                padding:0px;
+                max-width:100%;
+            }
+            #homeHeaderImage
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                background-image: url("homePhotos/draplin.jpg");
+                background-size: cover;
+                width:100vw;
+                height: 50vh;  
+                position:relative;
+                max-width:100%;
+            }
+            #homeHeaderText
+            {     
+                position:absolute;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin:0px;
+                padding:10px;
+                font-weight: 700;
+                color:white;
+                font-size:6vw;
+                background-color:black;
+                text-align: left;
+                
+                top:20vh;
+                left:22vw;
+                max-width:100%;
+            }
+            #homeDivider
+            {
+                max-width:100%;
+                height:1vh;
+                background-color:black;
+                width: 100vw;
+            }
+            #homeMenuBody
+            {
+                max-width:100%;
+                background-color:#FFFFF0;
+                height: 49vh;
+                width:100vw;
+                position:relative;
+            }
+            #homeLinks
+            {
+                max-width:100%;
+                width:100vw;
+                height:42vh;
+                position:absolute;
+                top:5vh;
+            }
+            a:link.choicesGlaser
+            {
+                max-width:100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color:black;
+                font-size: 20px;
+                font-weight: 700;
+                padding:5px;
+                margin-left:23vw;
+            }
+            a:link.choicesRand
+            {
+                max-width:100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color:black;
+                font-size: 20px;
+                font-weight: 700;
+                padding:5px;
+                margin-left:23vw;
+            }
+            a:link.choicesBass
+            {
+                max-width:100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color:black;
+                font-size: 20px;
+                font-weight: 700;
+                padding:5px;
+                margin-left:23vw;
+            }
+            a:link.choicesVignelli
+            {
+                max-width:100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color:black;
+                font-size: 20px;
+                font-weight: 700;
+                padding:5px;
+                margin-left:23vw;
+            }
+            a:link.choicesLubalin
+            {
+                max-width:100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color:black;
+                font-size: 20px;
+                font-weight: 700;
+                padding:5px;
+                margin-left:23vw;
+            }
+            a:link.choicesCasey
+            {
+                max-width:100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color:black;
+                font-size: 20px;
+                font-weight: 700;
+                padding:5px;
+                margin-left:23vw;
+            }
+            a:hover.choicesGlaser
+            {
+                background-color:red;
+                color:white;
+            }
+            a:hover.choicesRand
+            {
+                background-color:blue;
+                color:white;
+            }
+            a:hover.choicesBass
+            {
+                background-color:darkgoldenrod;
+                color:white;
+            }
+            a:hover.choicesVignelli
+            {
+                background-color:green;
+                color:white;
+            }
+            a:hover.choicesLubalin
+            {
+                background-color:brown;
+                color:white;
+            }
+            a:hover.choicesCasey
+            {
+                background-color:purple;
+                color:white;
+            }
+
+            #secondPageHeader
+            {
+                max-width:100%;
+                background-color:black;
+                width:100vw;
+            }
+            #secondPageHeaderText
+            {
+                max-width:100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:grey;
+                font-weight: 700;
+                font-size: 40px;
+                text-align: left;
+                padding: 150px;
+            }
+            .secondPageBody
+            {
+                max-width: 100%;
+                background-color:white;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                color:grey;
+                padding-left: 15vw;
+                padding-right: 15vw;
+                font-size:25px;
+
+            }
+            #secondPage
+            {
+                max-width: 100%;
+                background-color:white;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                color:grey;
+                font-size:25px;
+
+            }
+            .secondPageTitle
+            {
+                margin-top: 40px;
+                max-width: 100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                color:black;
+                text-decoration: overline;
+                font-size:3.213vw;
+                text-align: center;
+            }
+            #secondPageImage1
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                background-image: url("homePhotos/bassWall.jpg");
+                background-size: cover;
+                width:100vw;
+                height: 140vh;  
+                position:relative;
+                max-width:100%;
+            }
+           
+            #secondPageTitleQuote
+            {
+                margin-top: 40px;
+                max-width: 100%;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                color:White;
+                text-decoration: overline;
+                font-size:3.213vw;
+                text-align: center;
+            }
+           
+
+            
+            
+          
+            #colorSwitcher
+            {
+                width:100%;
+                height:20px;
+            }
+            #colorBlack
+            {
+                width:14.285714%;
+                height:20px;
+                background-color:black;float:left;
+            }
+            #colorRed
+            {
+                width:14.285714%;
+                height:20px;
+                background-color:red;float:left;
+                float:left;
+            }
+            #colorBlue
+            {
+                width:14.285714%;
+                height:20px;
+                background-color:blue;float:left;
+            }
+            #colorOrange
+            {
+                width:14.285714%;
+                height:20px;
+                background-color:orange;float:left;
+            }
+            #colorGreen
+            {
+                width:14.285714%;
+                height:20px;
+                background-color:green;float:left;
+            }
+            #colorPurple
+            {
+                width:14.285714%;
+                height:20px;
+                background-color:purple;float:left;
+            }
+            #colorBrown
+            {
+                width:14.285714%;
+                height:20px;
+                background-color:brown;float:left;
+            }
+        
+            a:link.backToTop
+            {
+                width:78px;
+                height:78px;
+                float:right;
+                position:fixed;
+                z-index:4;
+                top:83vh;
+                right:3vw;
+            }
+
+
+ul {
+    position:fixed;
+    z-index:12;
+    left:20px;
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+
+
+}
+ul li {
+    position:fixed;
+    z-index:12;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight:700;
+    font-size:28px;
+    text-decoration: overline;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: black;
+    color:white;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+    height:78px;
+    width:78px;
+    padding-top:50px;
+    
+}
+ul li:hover {
+  background: red;
+  color: white;
+    height:78px;
+    width:78px;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 142px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul a { 
+  background: black; 
+  display: block; 
+  color: white;
+  text-shadow: 0 -1px 0 #000;
+    text-decoration:none;
+    padding-left: 10px;
+    font-size:15px;
+    height:30px;
+    padding-top:5px;
+}
+ul li ul a:hover { background: red;
+    text-decoration: overline;
+}
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+    background:white;
+    color:black;
+    
+}
+        
+            
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <div id = "colorSwitcher">
+            <div id = "colorBlack"></div>
+            <div id = "colorRed"></div>
+            <div id = "colorBlue"></div>
+            <div id = "colorOrange"></div>
+            <div id = "colorGreen"></div>
+            <div id = "colorPurple"></div>
+            <div id = "colorBrown"></div>
+        </div>
+        
+        <ul>
+            <li>
+            Menu
+                <ul>
+                    <a href = "index.html">Home</a>
+                    <a href = "glaser.html">Milton Glaser</a>
+                    <a href = "rand.html">Paul Rand</a>
+                    <a href = "bass.html">Saul Bass</a>
+                    <a href = "vignelli.html">Massimo Vignelli</a>
+                    <a href = "lubalin.html">Herb Lubalin</a>
+                    <a href = "casey.html">Jacqueline Casey</a>
+                    <a href = "contact.html">Contact/Sources</a>
+                </ul>
+            </li>
+        </ul>
+        
+        <a class = "backToTop" href = "#colorSwitcher">
+                 <img class = "backToTop" alt = "Back To Top Button" src = "MiscPhotos/backToTop.png">
+                 </a>
+        
+        <div id = "homeHeaderImage">
+            <div id = "homeHeaderText">Graphic Designers.</div>
+        </div>
+        <div id = "homeDivider"></div>
+        
+        <div id = "homeMenuBody">
+          <div id = "homeLinks">
+            <a class = "choicesGlaser" href = "glaser.html">I........Milton Glaser</a><br><br>
+            <a class = "choicesRand" href = "rand.html">II.......Paul Rand</a><br><br>
+            <a class = "choicesBass" href = "bass.html">III......Saul Bass</a><br><br>
+            <a class = "choicesVignelli" href = "vignelli.html">IV.......Massimo Vignelli</a><br><br>
+            <a class = "choicesLubalin" href = "lubalin.html">V........Herb Lubalin</a><br><br>
+            <a class = "choicesCasey" href = "casey.html">VI.......Jacqueline Casey</a>  
+            </div>  
+        </div>
+        
+        <div id = "secondPageHeader">
+            <div id = "secondPageHeaderText">
+                <div id = "secondPageTitleQuote" style = "color:red">What is Graphic Design?</div><br>
+                "I want everything we do to be beautiful. I don't give a damn whether the client
+                understands that's worth anything. It's worth it to me. It's the way I want to live my life.
+                I want to make beautiful things, even if nobody cares."
+                <br><br>Saul Bass
+            </div>
+        </div>
+        
+        <div id = "secondPage">
+            <div id = "secondPageImage1"></div>
+        <div class = "secondPageBody">
+            <div class = "secondPageTitle" style = "color:black;">"I want to make beautiful things"</div>
+                
+                <br>
+                
+                To most people, graphic design is the creation of posters, logos, symbols, etc. Reall, anything that needs visual communication. To most people, graphic design relates to the use of type, space, image and colour. <br><br>
+                
+                    But when Saul Bass says his quote above, he strikes at the core of what graphic design is really about. It's not just about creating a logo or making a poster. It's about appreciating the beauty and subtlety behind them.
+            <br><br>
+            
+            Bass's quote takes a definitive stand on the question of graphic design's place in the world of art. Confidently, he says that his work, much like any other artist, seeks to manifest beauty. </div>       
+   <br>
+            
+            <div class = "secondPageBody">
+             <div class = "secondPageTitle" style = "color: black;">Is there beauty in a logo?</div>
+            <br>
+            It's easy to scoff at Bass's assertion. How can an IBM logo possibly be art? In what ways is a movie poster comparable to a Van Goph? 
+            <br><br>
+            Ultimately, graphic design is part of a larger belief in how the world should be: beautiful. Thus, when Saul Bass speaks about his desire to make "beautiful things", he's not coming from a place of superiority. He's not trying to pit one medium against another. But what he is saying is that nothing should be ignored in the search for beauty. 
+            <br><br>
+            Beauty doesn't have to come solely from multi-million dollar films or paintings in the Louvre. Bass tells us that beauty can come from anything and everything, whether that be in the lines of a logo or in the colour of a poster. 
+                 <br><br>
+                 This website features 6 designers whose work exemplifies Bass's definition of beauty.
+            <br><br><br><br>
+
+                 
+                 
+                  <br><br><br><br>
+                 Last Updated: Sunday, December 6th, 2015
+            </div>
+       
+        </div>
+    <br><br><br><br>
+     
+    </body>
+
+</html>

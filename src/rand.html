@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta name = "keywords" content = "Paul Rand, New Haven, IBM, UPS">
+        <meta name = "description" content = "Paul Rand’s background and work experience. ">
+        <meta name = "author" content = "Jack Ding">
+         <title>Paul Rand: About</title>
+        <style>
+        
+             html, body
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin:0px;
+                padding:0px;
+                max-width:100%;
+            }
+            
+            ul 
+            {
+                position:fixed;
+                z-index:12;
+                left:20px;
+                text-align: left;
+                display: inline;
+                margin: 0;
+                padding: 15px 4px 17px 0;
+                list-style: none;
+            }
+            ul li 
+            {
+                position:fixed;
+                z-index:12;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight:700;
+                font-size:28px;
+                text-decoration: overline;
+              display: inline-block;
+              margin-right: -4px;
+              position: relative;
+              padding: 15px 20px;
+              background: black;
+                color:white;
+              cursor: pointer;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+                height:78px;
+                width:78px;
+                padding-top:50px;
+
+            }
+            ul li:hover {
+              background: blue;
+              color: white;
+                height:78px;
+                width:78px;
+            }
+            ul li ul {
+              padding: 0;
+              position: absolute;
+              top: 142px;
+              left: 0;
+              width: 150px;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transition: opacity 0.2s;
+              -moz-transition: opacity 0.2s;
+              -ms-transition: opacity 0.2s;
+              -o-transition: opacity 0.2s;
+              -transition: opacity 0.2s;
+            }
+            ul li ul a { 
+              background: black; 
+              display: block; 
+              color: white;
+              text-shadow: 0 -1px 0 #000;
+                text-decoration:none;
+                padding-left: 10px;
+                font-size:15px;
+                height:30px;
+                padding-top:5px;
+            }
+            ul li ul a:hover { background: blue;
+                text-decoration: overline;
+            }
+            ul li:hover ul 
+            {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                background:white;
+                color:black;
+            }
+            
+            a:link.backToTop
+            {
+                width:78px;
+                height:78px;
+                float:right;
+                position:fixed;
+                z-index:4;
+                top:83vh;
+                right:3vw;
+            }
+            
+            #sideBox
+            {
+                max-width: 100%;
+                width:20vw;
+                height:100vh;
+                position:fixed;
+            }
+            #sideTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:blue;
+                font-weight:700;
+                font-size: 4vw;
+                position:fixed;
+                top:200px;
+                width: 20vw;
+                padding-left: 20px;
+                text-decoration: overline;
+            }
+            #mainBox
+            {
+                max-width: 100%;
+                float:right;
+                width:79vw;
+                height:auto;
+            }
+            #mainBoxSplash
+            {
+                max-width: 100%;
+                height:100vh;
+                width:80;
+                background-image: url(randPhotos/IBM5.png);
+            }
+            #mainBoxSplashTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                float:right;
+                width:230px;
+                margin-left:20px;
+                margin-top: 160px;
+                color:white;
+                background-color:black;
+                padding-left: 20px;
+            }
+            #mainBoxPhoto
+            {
+                background-image: url(randPhotos/randIBM.jpg);
+                background-size: cover;
+                height: 100vh;
+                width:inherit;
+            }
+            #mainBoxPhoto2
+            {
+                background-image: url(randPhotos/randSign.jpg);
+                background-size: cover;
+                height: 70vh;
+                width:inherit;
+            }
+            #homeDivider
+            {
+                max-width:100%;
+                height:1vh;
+                background-color:black;
+                width: 100vw;
+            }
+            #mainBoxQuoteBox
+            {
+                width:inherit;
+                background-color: black;
+            }
+            #mainBoxQuoteText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:blue;
+                font-weight:700;
+                font-size: 40px;
+                width:40vw;
+                text-align: center;
+                padding:70px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mainBoxBio
+            {
+                width:inherit;
+                height:auto;
+                padding-top:20px;
+            }
+            #mainBoxBioTitle
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 40px;
+                text-decoration: overline;
+            }
+            #mainBoxBioText
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:grey;
+                font-weight:700;
+                font-size: 20px;
+                width:60vw;
+                padding-top: 20px;
+            }
+            .mainBoxBioTextHighlight
+            {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:blue;
+                font-weight:700;
+                font-size: 20px;
+                width: 150px;
+                float:left;
+            }
+            a.sideNav
+            {
+                text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color:black;
+                font-weight:700;
+                font-size: 30px;
+                position:fixed;
+                margin-left: 20px;
+                padding:10px;
+                font-size: 2.2vw;
+            }
+            a.sideNav:hover
+            {
+                color:white;
+                background-color: black;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <ul>
+  <li>
+    Menu
+    <ul>
+        <a href = "index.html">Home</a>
+        <a href = "glaser.html">Milton Glaser</a>
+        <a href = "rand.html">Paul Rand</a>
+        <a href = "bass.html">Saul Bass</a>
+        <a href = "vignelli.html">Massimo Vignelli</a>
+        <a href = "lubalin.html">Herb Lubalin</a>
+        <a href = "casey.html">Jacqueline Casey</a>
+        <a href = "contact.html">Contact/Sources</a>
+   </ul>
+  </li>
+
+</ul>
+        
+        <a class = "backToTop" href = "#mainBoxSplash">
+                 <img class = "backToTop" alt = "Back To Top Button" src = "MiscPhotos/backToTop.png">
+                 </a>
+        
+        
+        
+        <div id = "sideBox">
+            <div id = "sideTitle">Paul Rand.
+            <br>New Haven.<br>1956.
+            </div>
+            
+            <br>
+            <a class = "sideNav" href = "rand.html" style = "top:80vh;">> About</a>
+             <a class = "sideNav" href = "randWork.html" style = "top:88vh;">> Works</a>
+        </div>
+        
+        <div id = "mainBox">
+            <div id = "mainBoxSplash">
+            
+                <div id = "mainBoxSplashTitle">American (Corporate) Beauty.</div> 
+                
+            </div>
+            
+            <div id = "homeDivider"></div>
+            
+            
+            <div id = "mainBoxQuoteBox">
+                <div id = "mainBoxQuoteText">
+                    "Design is a way of life, a point of view."
+                </div>
+            </div>
+            <div id = "mainBoxPhoto2">
+            </div>
+            <div id = "mainBoxBio">
+                <div id = "mainBoxBioTitle">About Paul Rand</div>
+                <div id = "mainBoxBioText">
+                <div class = "mainBoxBioTextHighlight">> Name:</div> Paul Rand<br>
+                    <div class = "mainBoxBioTextHighlight">> Born:</div>1914, Brooklyn<br>
+                    <div class = "mainBoxBioTextHighlight">> Studio:</div>Freelance<br>
+                    <div class = "mainBoxBioTextHighlight">> Known for:</div> "IBM", "UPS", "ABC", "NeXT"<br>
+                    
+                    <br><br>
+                    
+                    Paul Rand was an American art director and graphic designer. Born in Brooklyn, Rand showed artistic ability at a very young age, and went on to study at the Pratt Institute while teaching himself the core principles of design.
+                    <br><br>
+                    Rand began to grow his portfolio during his university years, compiling assignments and freelance work. His school assignments allowed him to explore his own creative capabilities, as he didn't have to appease any clients. It was during this time that he discovered the Swiss Style of graphic design.
+                    <br><br>
+                    The Swiss Style embraced clean-cut lines and bold font type over all else. It was Rand's focus on this simplicity that made him so famous for creating recognizable and simple corporate logos. 
+                    <br><br>
+                    Ultimately, Rand brought an element of elegance to the world of corporate design. This design philosophy is clearly seen in all of his works, most particularly in his IBM logo and his Westinghouse logo.
+                    
+                </div>
+                
+            <br><br><br><br>
+
+                
+            </div>
+            
+        </div>
+    
+    </body>
+    
+</html>
